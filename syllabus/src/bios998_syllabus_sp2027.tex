@@ -1,0 +1,180 @@
+\documentclass[12pt, notitlepage]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex
+
+\usepackage{hyperref}
+		
+%SetFonts
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tgbonum}
+
+%SetFonts
+
+\title{
+	\textbf{
+		BIOS 998-002
+	} \\
+	\large Ecosystem Modeling \\
+	\large Spring 2027
+}
+
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+{\fontfamily{phv}\selectfont %select helvetica (code = phv)
+
+\maketitle
+
+\section{Course Description}
+Students in this course will learn the core concepts behind systems thinking and model building.
+Through course-based model development,
+students will learn the skills necessary to develop their own model based on their interests
+and to understand
+the workings of models developed by others. Models will be developed independently and 
+connected collaboratively into a class-scale ecosystem model.
+The course is intended for graduate students interested in developing skills in
+quantitative theory development, systems thinking, and model building. Students will also
+learn best practices in R coding, version control, and large project collaboration.
+
+\subsection{Class Time and Location}
+Tuesdays and Thursdays 12:30-13:45
+
+Beadle N172
+
+\subsection{Instructor}
+Dr. Nick Smith \par
+Manter 402C \par
+nsmith87@unl.edu \par
+
+\subsection{Office Hours}
+Thursdays 14:00-14:45 \par
+Manter 402C \par
+
+\subsection{Recommended Texts}
+Climate Change and Terrestrial Ecosystem Modeling
+by Bonan
+\url{https://doi.org/10.1017/9781107339217}\par
+
+Principles of Terrestrial Ecosystem Ecology (2nd Edition; 2011) 
+by Chapin, Matson, and Vitousek \par
+The book can be accessed from Springer here: 
+\url{https://link.springer.com/book/10.1007/978-1-4419-9504-9}. Click on "Access this title on 
+SpringerLink." It can also be accessed through the TTU library.
+
+\section{Course Materials}
+All course materials, including lecture slides, readings, activities, and code 
+will be posted to a GitHub repository for the course.
+The primary repository address is
+\url{https://github.com/SmithEcophysLab/ecosystem_modeling_sp2027}.
+The repository will include the syllabus and all other miscellaneous class materials as the semester
+progresses. A README file will contain information on the repository, including
+links to different sections at 
+\url{https://github.com/SmithEcophysLab/ecosystem_modeling_sp2027/README.md}.
+
+\section{Learning Objective}
+This course will broadly focus on understanding the principles underlying the development of
+process-based models of ecosystems. An emphasis will be placed on how to build these
+models to understand the interactions between ecosystems and drivers of global
+change, including climate change, changes in atmospheric gas concentration, and eutrophication.
+Course topics will be taught through the lens of classical and more contemporary 
+primary and secondary literature. There will be a strong emphasis on hands-on modeling skill
+development. Topics will be flexible and modified to match student interests where possible.
+
+\section{Attendance Policy}
+Attendance will not be taken, but is strongly recommended. 
+In class activity points will only be granted if students are in class.
+Makeups will not be granted.
+
+\section{Course Assessment}
+\subsection{\textit{Participation and Engagement}}
+Being an active and engaged participant in the class will benefit your understanding
+of material as well as your peers'. Examples include asking questions, providing feedback,
+and facilitating discussion.
+
+\subsection{\textit{Quizzes}}
+Short quizzes will be given periodically to test student knowledge of core concepts and to
+stimulate discussion. In some cases, quizzes will be developed and administered
+by class weekly co-leads.
+
+\subsection{\textit{Homework Assignments}}
+Short homework assignments will be given each week based on the Tuesday lectures and
+Thursday model development discussions. These will typically be assigned on Thursday and
+due the following Tuesday.
+
+\subsection{\textit{Weekly co-leads}}
+Throughout the semester, students will be asked to co-lead on the week's discussion
+topic with Dr. Smith. This will consist of leading a jigsaw-style discussion of a literature article on Tuesdays
+and developing a quiz for students on Thursdays.
+Students will be evaluated on their ability to respond accurately to their peers' questions
+as well as their ability to summarize and generate discussion on the week's topic.
+
+\subsection{\textit{Model module development}}
+The primary semester project will be to develop a module for the class ecosystem
+model based on the student's interest. The module will be written in R and must be able to
+run as a stand-alone module as well as in connection with the larger class model.
+The student will be required to write a full description of the module to coincide with the
+code in both README and manuscript style format.
+
+\section{Grading}
+Participation and Engagement: 25\% \par
+Quizzes: 5\% \par
+Homework Assignments: 20\% \par
+Weekly co-lead: 15\% \par
+Module proposal: 10\% \par
+Module presentation: 5\% \par
+Final module: 20\% \par
+
+Grades will be made available on Blackboard. 
+All grades posted at the end of the course will be final, 
+unless an error has been made in their calculation.
+Please contact Dr. Smith if you feel your grade has been calculated incorrectly.
+
+\section{Grading Scale}
+A: $\geq$ 90\% \par
+B: 80 – 90\% \par
+C: 70 – 80\% \par
+D: 60 – 70\% \par
+F: $\leq$ 59.9\% \par
+
+\section{Missing In-class Activities}
+Students will be required to be in class to receive in-class activity points. 
+Please contact Dr. Smith if you plan to miss class for a university function 
+\textit{prior to class}. If class is missed due to an illness, 
+please let Dr. Smith know as soon as possible. Documentation will need to be provided
+in order to be able to make up any missed work.
+
+\newpage
+
+\section*{Schedule of Topics by Week}
+01/12/2027 – Introductions, semester planning, and goals \par
+01/19/2027 – Systems Thinking; building systems diagrams \par
+01/26/2027 – Terrestrial Ecosystem cycles; downloading and using R \par
+02/02/2027 – Ecosystem Models; GitHub and the class model environment \par
+02/09/2027 – 3 R's of Ecosystem Modeling; working collaboratively in GitHub \par
+02/16/2027 – Integrating Ecology into Models; writing functions in R \par
+02/23/2027 – Eco-evolutionary Optimality Theory; model repository structure \par
+03/02/2027 – \textbf{Module proposal presentations} \par
+03/09/2027 – \textbf{Module proposal presentations} \par
+03/16/2027 – NO CLASS; SPRING BREAK \par
+03/23/2027 – Model development: Carbon \par
+03/30/2027 – Model Development: Water \par
+04/06/2027 - TBD \par
+04/13/2027 – Model Development: Nutrients \par
+04/20/2027 – \textbf{Module presentations} \par
+04/27/2027 – \textbf{Module presentations}; \textbf{Final module due} \par
+
+\section*{General Weekly Schedule}
+Generally, each Tuesday will consist of a lecture and jigsaw-style paper discussion. Thursdays
+will consist of a quiz, paper discussion, and class model development exercise.
+
+} %end font selection
+
+\end{document} 
